@@ -50,9 +50,9 @@ function MergeSort(array, half = array.length / 2) {
 function QuickSort(array) {
     if (array.length < 2) return array;  
     let p = array[0];    
-    var l = []; 
-    var r = [];  
-    for (var i = 1; i < array.length; i++) array[i] < p ? l.push(array[i]) : r.push(array[i]);  
+    let l = []; 
+    let r = [];  
+    for (let i = 1; i < array.length; i++) array[i] < p ? l.push(array[i]) : r.push(array[i]);  
     return QuickSort(l).concat(p, QuickSort(r));
 }
 
